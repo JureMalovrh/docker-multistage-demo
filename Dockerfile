@@ -17,6 +17,3 @@ RUN apt-get install npm -y
 WORKDIR /app/services/world
 RUN npm install
 RUN npm run build
-
-WORKDIR /app
-CMD ./hello && node services/world/dist/index.js
