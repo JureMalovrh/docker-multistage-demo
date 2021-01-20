@@ -6,4 +6,6 @@ app.use(async ctx => {
     ctx.body = 'World';
 });
 
-app.listen(process.env.PORT || 3001);
+const servingPort = process.env.PORT || 3001;
+console.log(`Serving on ${servingPort}`)
+app.listen(servingPort);
