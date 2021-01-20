@@ -2,13 +2,11 @@ version: '3.4'
 
 services:
   hello:
-    image: celtra/multi:4th
+    image: celtra/multi:go
     ports: 
       - "3000:3000"
-    command: /app/hello
     
   world:
-    image: celtra/multi:4th
+    image: celtra/multi:node
     ports:
      - "3001:3001"
-    command: node /app/services/world/dist/index.js
